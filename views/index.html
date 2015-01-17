@@ -39,7 +39,13 @@
 
     .mover {
       position: fixed; 
-      width: 256px;
+      /* Saw improvement, though insconsistent, to almost 60fps using transform: translateZ(0) from http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css */
+     -webkit-transform: translateZ(0); 
+     -moz-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+     -o-transform: translateZ(0);
+      transform: translateZ(0);
+      width: 256px; 
       z-index: -1;
     }
 
