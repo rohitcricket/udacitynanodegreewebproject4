@@ -16,7 +16,7 @@ gulp.task('default', function() {
 var uglify = require('gulp-uglify');
 
 gulp.task('default', function() {
-  gulp.src('js/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./out'));
+    gulp.src('js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./out'));
 });

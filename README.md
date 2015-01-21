@@ -23,8 +23,14 @@ I used http://jpeg-optimizer.com/ and http://compresspng.com/.
 
 Gulp can be downloaded at http://gulpjs.com/. Instructions are easy to follow.
 
-I included comments in each file to show what was modified to improve perfomance.
+Some key points to optimize the files were:
+1. Minimized css, js and images.
+2. Used transform: translateZ(0) from http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css. Saw improvement on the fps.
+3. Moved out code of loops that don't have to be used again and again.
+4. Used async js where applicable. 
+5. Used index.html (e.g. index.html for pizza.html) for using HTTP server and ngrok.
 
+I included comments in each file to show what was modified to improve perfomance.
 
 ## Website Performance Optimization portfolio project
 
